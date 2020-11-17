@@ -6,6 +6,17 @@
   <title>Sign up</title>
 </head>
 <body>
-
+  <form class="form" action="https://reqres.in/api/register" method="post">
+    <p class="form__input"><input type="tel" name="mobile"  placeholder="Mobile Phone" required></p>
+    <p class="form__input"><input type="email" name="email"  placeholder="Email ID" required></p>
+    <p class="form__input"><input type="password" name="password"  placeholder="Password" required></p>
+    <p class="form__agree">
+      <label>
+        <input type="checkbox" value="agree" id="agree">
+        I agree to terms and conditions
+      </label>
+    </p>
+    <button class="form__submit" type="submit">Register</button>
+  </form>
 </body>
 </html>
