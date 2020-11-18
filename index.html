@@ -3,20 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Sign up</title>
 </head>
 <body>
-  <form class="form" action="https://reqres.in/api/register" method="post">
-    <p class="form__input"><input type="tel" name="mobile"  placeholder="Mobile Phone" required></p>
-    <p class="form__input"><input type="email" name="email"  placeholder="Email ID" required></p>
-    <p class="form__input"><input type="password" name="password"  placeholder="Password" required></p>
-    <p class="form__agree">
-      <label>
-        <input type="checkbox" value="agree" id="agree">
-        I agree to terms and conditions
-      </label>
-    </p>
-    <button class="form__submit" type="submit">Register</button>
-  </form>
+  <div class="wrapper">
+    <form class="form" action="https://reqres.in/api/register" method="post">
+      <ul class="form__navigation-list">
+        <li class="form__navigation-item">Sign in</li>
+        <li class="form__navigation-item form__navigation-item--active">Sign up</li>
+      </ul>
+      <div class="form__input-block">
+        <p class="form__input-wrapper"><input class="form__input" type="tel" name="mobile"  placeholder="Mobile Phone" required></p>
+        <p class="form__input-wrapper"><input class="form__input" type="email" name="email"  placeholder="Email ID" required></p>
+        <p class="form__input-wrapper"><input class="form__input" type="password" name="password"  placeholder="Password" required></p>
+      </div>
+      <p class="form__agree">
+        <label>
+          <input type="checkbox" value="agree" id="agree">
+          I agree to terms and conditions
+        </label>
+      </p>
+      <button class="form__submit" type="submit">Register</button>
+    </form>
+  </div>
 </body>
 </html>
