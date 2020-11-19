@@ -20,7 +20,7 @@ body {
   background-size: cover;
 }
 
-.form {
+.form__container {
   width: 429px;
   height: 546px;
   padding: 40px 40px 50px;
@@ -29,18 +29,20 @@ body {
   color: #ffffff;
 }
 
-.form__navigation-list {
-  display: flex;
-
-  margin: 0;
-  margin-bottom: 60px;
-  padding: 0;
-
-  list-style: none;
+.form__navigation-tab {
+  display: none;
 }
 
-.form__navigation-item {
+.form__navigation-tab:checked + label {
+  border-bottom: 3px solid #ffab1a;
+}
+
+.form__navigation-label {
+  display: inline-block;
+
+  margin: 0;
   margin-right: 48px;
+  padding: 0;
   padding-bottom: 6px;
 
   font-size: 22px;
@@ -49,18 +51,42 @@ body {
   cursor: pointer;
 }
 
-.form__navigation-item--active {
-  border-bottom: 3px solid #ffab1a;
+.form__navigation-label:last-child {
+  margin-right: 0;
+}
+
+.form {
+  display: none;
+}
+
+.form--sign-in {
+  margin-top: 80px;
+}
+
+.form--sign-up {
+  margin-top: 60px;
+}
+
+.form__navigation-tab:checked:nth-of-type(1) ~ form:nth-of-type(1) {
+  display: block;
+}
+
+.form__navigation-tab:checked:nth-of-type(2) ~ form:nth-of-type(2) {
+  display: block;
 }
 
 .form__input-block {
   margin: 0;
   padding: 0;
-  margin-bottom: 46px;
+  margin-bottom: 36px;
+}
+
+.form__input-wrapper {
+  margin: 0;
 }
 
 .form__input-wrapper:not(:last-child) {
-  margin-bottom: 52px;
+  margin-bottom: 54px;
 }
 
 .form__input  {
@@ -77,13 +103,21 @@ body {
 
 .form__input::placeholder {
   color: #ffffff;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .form__agree {
   margin: 0;
   padding: 0;
-  margin-bottom: 36px;
+  margin-bottom: 40px;
+
+  font-size: 16px;
+}
+
+.form__keep {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 58px;
 
   font-size: 16px;
 }
@@ -103,4 +137,17 @@ body {
   background-color: #f57f17;
   border: none;
   border-radius: 20px;
+  cursor: pointer;
+}
+
+.form__forgot {
+  display: block;
+
+  margin: 24px auto 0;
+  width: 180px;
+
+  text-align: center;
+  font-size: 22px;
+  text-decoration: none;
+  color: #ffffff;
 }
