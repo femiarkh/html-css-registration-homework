@@ -21,7 +21,8 @@ body {
 }
 
 .form__container {
-  width: 429px;
+  width: 100%;
+  max-width: 429px;
   height: 546px;
   padding: 40px 40px 50px;
 
@@ -51,7 +52,7 @@ body {
   cursor: pointer;
 }
 
-.form__navigation-label:last-child {
+.form__navigation-label:last-of-type {
   margin-right: 0;
 }
 
@@ -144,10 +145,20 @@ body {
   display: block;
 
   margin: 24px auto 0;
-  width: 180px;
+  width: 200px;
 
   text-align: center;
   font-size: 22px;
   text-decoration: none;
   color: #ffffff;
+}
+
+@media (max-width: 431px) {
+  .form__container {
+    padding: 30px 30px 40px;
+  }
+
+  .form__agree, .form__keep {
+    font-size: 15px;
+  }
 }
