@@ -5,7 +5,6 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Proxima Nova", "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif;
 }
 
@@ -13,9 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   height: 100vh;
-
   background-image: url('Images/Layer.png');
   background-size: cover;
 }
@@ -25,7 +22,6 @@ body {
   max-width: 429px;
   height: 546px;
   padding: 40px 40px 50px;
-
   background-color: rgba(17,23,27,0.8);
   color: #ffffff;
 }
@@ -40,15 +36,12 @@ body {
 
 .form__navigation-label {
   display: inline-block;
-
   margin: 0;
   margin-right: 48px;
   padding: 0;
   padding-bottom: 6px;
-
   font-size: 22px;
   text-transform: uppercase;
-
   cursor: pointer;
 }
 
@@ -93,10 +86,8 @@ body {
 .form__input  {
   width: 100%;
   padding: 8px 3px;
-
   color: #ffffff;
   font-size: 17px;
-
   background: none;
   border: none;
   border-bottom: 1px solid #a5a5a3;
@@ -111,7 +102,6 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
-
   font-size: 16px;
 }
 
@@ -119,22 +109,18 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 58px;
-
   font-size: 16px;
 }
 
 .form__submit {
   display: block;
-
   margin: 0 auto;
   padding: 10px;
   width: 195px;
   height: 40px;
-
   color: #ffffff;
   text-transform: uppercase;
   font-size: 18px;
-
   background-color: #f57f17;
   border: none;
   border-radius: 20px;
@@ -143,10 +129,8 @@ body {
 
 .form__forgot {
   display: block;
-
   margin: 24px auto 0;
   width: 200px;
-
   text-align: center;
   font-size: 22px;
   text-decoration: none;
